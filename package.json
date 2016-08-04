@@ -1,0 +1,24 @@
+{
+  "name": "xdcc-downloader",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "docker:build": "docker build -t xdcc-download .",
+    "docker:start": "docker run --rm -i -t -u 1000:1000 -v $(pwd):/data xdcc-download",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^3.4.1",
+    "cheerio": "^0.20.0",
+    "inquirer": "^1.1.2",
+    "irc": "^0.5.0",
+    "progress": "^1.1.8",
+    "querystring": "^0.2.0",
+    "request": "^2.74.0",
+    "winston": "^2.2.0",
+    "xdcc": "^0.2.2"
+  }
+}
